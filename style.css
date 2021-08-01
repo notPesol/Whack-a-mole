@@ -1,0 +1,61 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+}
+
+.header{
+    width: 600px;
+    display: flex;
+    flex-flow: column;
+    margin: 20px auto;
+}
+.header > h1 {
+    text-align: center;
+}
+
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 600px;
+    margin: 0 auto;
+}
+
+.square{
+    width: 200px;
+    height: 200px;
+    border-style: solid;
+    border-radius: 50%;
+}
+
+.mole {
+    background-image: url('./mole1.png');
+    background-size: cover;
+    background-position: center;
+}
+
+@media screen and (max-width: 610px) {
+    .grid{
+        width: 100%;
+    }
+    .header{
+        width: 100%;
+    }
+    .square{
+        width: 33.33%;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .grid{
+        width: 100%;
+    }
+    .header{
+        width: 100%;
+    }
+    .square{
+        width: 33.33%;
+        height: 100px;
+    }
+}
